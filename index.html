@@ -1,0 +1,90 @@
+<!doctype html>
+
+<!--
+  This is a simple example / template impress.js slide show. The goal is to be
+  easier to read for a first timer than the official and very feature rich
+  demo by bartaz (http://bartaz.github.io/impress.js/). It's also a very
+  traditional presentation that looks like slides (square screens with bullet
+  points...), again to make a first timer feel more at home. From this simple
+  presentation you can then go on to more powerful impress.js presentations!
+  
+  This example is hopefully helpful for people that want to create both
+  simple and (eventually) awesome presentations in impress.js and comfortable
+  doing that directly in HTML.
+  
+  By: @henrikingo (Still based on the HTML from bartaz' demo.)  
+    
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Open source</title>
+    
+    <meta name="description" content="Open source" />
+    <meta name="author" content="Kumaran m" />
+
+    <link href="css/classic-slides.css" rel="stylesheet" />
+    
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="300">
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <h1>open source</h1>
+        <br/>
+        <center><img src="images/opensource-logo.png" alt=""></center>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        URL for this presentation and QR code for this
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+            Muthu Kumaran (mumu-in)
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="-1500">
+        <img src="images/Richard-Stallman.jpg" class="right"/>
+        <blockquote class="left">
+            To be able to choose between proprietary software packages is to be able to choose your master. Freedom means not having a master. And in an area of computing, freedom means not using proprietary software.
+            <p style="text-align: right">- Richard M.Stallman, The 'Godfather' of Open-Source</p>
+        </blockquote>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="-1500">
+        <h1>Which one you want to be?</h1>
+        <br/>
+        <img src="images/tiger-in-cage.jpg" class="left"/>
+        <img src="images/tiger-in-forest.jpg" class="right"/>
+    </div>
+    
+    <div class="step slide" data-x="5000" data-y="-1500">
+        <h1>Buying a car vs Building a one</h1>
+        <br/>
+        <img src="images/tiger-in-cage.jpg" class="left"/>
+        <img src="images/tiger-in-forest.jpg" class="right"/>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10" style="pointer-events: none;">
+    </div>
+</div>
+
+<div id="impress-toolbar"></div>
+
+<div class="impress-progressbar"><div></div></div>
+<div class="impress-progress"></div>
+
+
+<script type="text/javascript" src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
